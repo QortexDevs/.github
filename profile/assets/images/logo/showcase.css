@@ -1,5 +1,5 @@
 .body-gray {
-    background: #edebeb;
+    /* background: #edebeb; */
 }
 
 .color-white {
@@ -25,6 +25,20 @@
     row-gap: 50px;
 }
 
+.table-three-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    row-gap: 50px;
+
+}
+
+
+.table-three-columns img {
+    max-width: 100%;
+    
+}
+
 .table-cell {
     display: grid;
     grid-auto-rows: 1fr min-content;
@@ -36,11 +50,11 @@ img {
     max-height: 150px;
     width: 100%;
     object-fit: contain;
+    border: 1px dotted rgba(0,0,0,0.2);
 }
 
 .image-logo {
     margin-bottom: 10px;
-    background: white;
     align-self: center;
     justify-self: center;
 }
